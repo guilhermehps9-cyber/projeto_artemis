@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Artemis - Retorno à Lua</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #ffd700;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .content {
+            padding: 40px 0;
+        }
+        .mission-text {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .mission-text p {
+            margin-bottom: 15px;
+        }
+        .gallery {
+            margin-top: 40px;
+        }
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffd700;
+            font-size: 2rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .gallery-item p {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #ffd700;
+            margin-top: 40px;
+            color: #aaa;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/artemis_program_logo.png" 
+                 alt="Logo Missão Artemis" 
+                 class="logo"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e6/Artemis_program_logo.png'">
+            <h1>Missão Artemis</h1>
+            <p class="subtitle">O retorno da humanidade à Lua</p>
+        </header>
+        <div class="content">
+            <div class="mission-text">
+                <p>A <strong>Missão Artemis</strong> é o programa espacial da NASA que tem como objetivo levar a primeira mulher e o próximo homem à superfície lunar até 2025. Este é o primeiro passo para uma presença humana sustentável na Lua e a preparação para futuras missões tripuladas a Marte.</p>
+                <p>Diferente do programa Apollo, que levou 12 astronautas à Lua entre 1969 e 1972, a Artemis estabelecerá uma base lunar permanente, incluindo o <strong>Gateway</strong> (uma estação espacial orbitando a Lua) e o <strong>Artemis Base Camp</strong> na superfície lunar.</p>
+                <p>A missão utiliza o foguete <strong>Space Launch System (SLS)</strong> - o mais poderoso já construído - e a nave <strong>Orion</strong>, que levará os astronautas ao espaço profundo.</p>
+            </div>
+            <div class="gallery">
+                <h2>📸 Galeria da Missão</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/artemis_i_launch.jpg" alt="Lançamento">
+                        <p>Lançamento do Foguete SLS</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/orion_spacecraft.jpg" alt="Orion">
+                        <p>Nave Espacial Orion</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/lunar_surface.jpg" alt="Lua">
+                        <p>Superfície da Lua</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/astronauts_moon.jpg" alt="Astronautas">
+                        <p>Astronautas na Missão Lunar</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/gateway_lunar.jpg" alt="Gateway">
+                        <p>Futura Estação Lunar Gateway</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Missão Artemis - Programa de Exploração Lunar da NASA</p>
+            <p>Projeto educacional | 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
